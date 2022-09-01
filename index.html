@@ -9,50 +9,51 @@
 		<script src="index.js" defer></script>
 	</head>
 <body>
-	<header>
+	<header id="main-header">
 		<div class="logo-container"><img src="images/logo.svg" alt="Logo"></div>
 		<nav class="navbar-header">
 			<a href="#about">About</a>
 			<a href="#services">Services</a>
 			<a href="#projects">Projects</a>
 			<a href="#contact">Contact</a>
+			<button id="menu"><img src="images/icon-hamburger.svg" alt="Menu"></button>
 		</nav>
-		<button id="menu"><img src="images/icon-hamburger.svg" alt="Menu"></button>
+		<h1>WE ARE CREATIVES</h1>
+		<div><img src="images/icon-arrow-down.svg" alt="Arrow down"></div>
 	</header>
 
 	<section id="about">
-		<h1>WE ARE CREATIVES</h1>
-		<div><img src="images/icon-arrow-down.svg" alt="Arrow down"></div>
-	</section>
-
-	<section id="services">
 		<article>
-			<section class="service-info">
+			<section class="about-article-info">
 				<h3>Transform your brand</h3>
 				<p>We are a full-service creative agency specializing in helping
 				brands grow fast. Engage your clients through compelling visuals
 				that do most of the marketing for you.</p>
 				<a href="">LEARN MORE</a>
 			</section>
-			<picture>
+			<picture class="about-article-image">
 				<source media="(max-width: 1080px)" srcset="images/mobile/image-transform.jpg">
 				<img src="images/desktop/image-transform.jpg" alt="Transform">
 			</picture>
 		</article>
 
 		<article>
-			<section class="service-info">
+			<section class="about-article-info">
 				<h3>Stand out to the right audience</h3>
 				<p>Using a collaborative formula of designers, researchers,
 				photographers, videographers, and copywriters, we'll build and
 				extend your brand in digital places.</p>
 				<a href="">LEARN MORE</a>
 			</section>
+			<picture class="about-article-image">
+				<source media="(max-width: 1080px)" srcset="images/mobile/image-stand-out.jpg">
+				<img src="images/mobile/image-stand-out" alt="Stand out">
+			</picture>
 		</article>
 	</section>
 
-	<section id="projects">
-		<section>
+	<section id="services">
+		<section class="services-categories">
 			<article>
 				<h3>Graphic Design</h3>
 				<p>Great design makes you memorable. We deliver artwork that
@@ -67,7 +68,7 @@
 			</article>
 		</section>
 		
-		<section>
+		<section class="services-testimonials">
 			<h3>CLIENT TESTIMONIALS</h3>
 
 			<article class="client-testimonial">
@@ -110,40 +111,38 @@
 		</section>
 	</section>
 
-	<section id="contact">
-		<section>
-			<picture>
-				<source media="(max-width: 1080px)" srcset="images/mobile/image-gallery-milkbottles.jpg">
-				<img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
-			</picture>
-			<picture>
-				<source media="(max-width: 1080px)" srcset="images/mobile/image-gallery-orange.jpg">
-				<img src="images/desktop/image-gallery-orange.jpg" alt="Orange">
-			</picture>
-			<picture>
-				<source media="(max-width: 1080px)" srcset="images/mobile/image-gallery-cone.jpg">
-				<img src="images/desktop/image-gallery-cone.jpg" alt="Cone">
-			</picture>
-			<picture>
-				<source media="(max-width: 1080px)" srcset="images/image-mobile-gallery-sugar-cubes.jpg">
-				<img src="images/desktop/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
-			</picture>
-		</section>
+	<section id="projects">
+		<picture>
+			<source media="(max-width: 1080px)" srcset="images/mobile/image-gallery-milkbottles.jpg">
+			<img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
+		</picture>
+		<picture>
+			<source media="(max-width: 1080px)" srcset="images/mobile/image-gallery-orange.jpg">
+			<img src="images/desktop/image-gallery-orange.jpg" alt="Orange">
+		</picture>
+		<picture>
+			<source media="(max-width: 1080px)" srcset="images/mobile/image-gallery-cone.jpg">
+			<img src="images/desktop/image-gallery-cone.jpg" alt="Cone">
+		</picture>
+		<picture>
+			<source media="(max-width: 1080px)" srcset="images/image-mobile-gallery-sugar-cubes.jpg">
+			<img src="images/desktop/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
+		</picture>
+	</section>
 
-		<section>
-			<h3>sunnyside</h3>
-			<nav class="navbar-footer">
-				<a href="#about">About</a>
-				<a href="#services">Services</a>
-				<a href="#projects">Projects</a>
-			</nav>
-			<nav class="navbar-social-media">
-				<a href=""><img src="images/icon-facebook.svg" alt="Facebook"></a>
-				<a href=""><img src="images/icon-instagram.svg" alt="Instagram"></a>
-				<a href=""><img src="images/icon-twitter.svg" alt="Twitter"></a>
-				<a href=""><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
-			</nav>
-		</section>
+	<section id="contact">
+		<h3>sunnyside</h3>
+		<nav class="navbar-footer">
+			<a href="#about">About</a>
+			<a href="#services">Services</a>
+			<a href="#projects">Projects</a>
+		</nav>
+		<nav class="navbar-social-media">
+			<a href=""><img src="images/icon-facebook.svg" alt="Facebook"></a>
+			<a href=""><img src="images/icon-instagram.svg" alt="Instagram"></a>
+			<a href=""><img src="images/icon-twitter.svg" alt="Twitter"></a>
+			<a href=""><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
+		</nav>
 	</section>
 </body>
 </html>
