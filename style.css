@@ -338,3 +338,86 @@ h1, h3, strong {
 .navbar-contact:last-child a { margin: 0 1% }
 
 .navbar-contact:last-child a i { font-size: 1.4rem }
+
+/* MOBILE SETTINGS */
+@media screen and (max-width: 1080px) {
+	/* Header */
+	#main-header {
+		background-image: url("images/mobile/image-header.jpg");
+		background-size: 100%;
+		height: 80vh;
+		grid-template-columns: 1fr 20%;
+	}
+
+	.logo-container {
+		padding-left: 8%;
+	}
+
+	.logo-container img {
+		width: 45%;
+	}
+
+	.navbar-main-header {
+		display: none;
+		position: absolute;
+		width: 86%;
+		background-color: var(--white);
+		height: 50vh;
+		top: 15%;
+		left: 7%;
+		z-index: 1;
+		flex-direction: column;
+	}
+
+	.navbar-main-header::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10vw 10vw 0px 5vw;
+		border-color: transparent var(--white) transparent transparent;
+		top: -10%;
+		right: 0;
+		z-index: 0;
+	}
+
+	.navbar-main-header a:not(a:last-child) {
+		color: var(--dark-grayish-blue);
+	}
+
+	.navbar-main-header a:not(a:last-child):hover {
+		color: var(--very-dark-desaturated-blue);
+	}
+
+	.navbar-main-header a:last-child {
+		background-color: var(--yellow);
+		font-family: 'Fraunces';
+		padding: 3% 5%;
+	}
+
+	#menu {
+		all: unset;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu:hover {
+		cursor: pointer;
+	}
+
+	#main-header h1 {
+		font-size: 2.2rem;
+		letter-spacing: 1.2vw;
+	}
+
+	#main-header div:last-child {
+		align-items: center;
+	}
+
+	#main-header div:last-child img {
+		width: 10%;
+	}
+}
