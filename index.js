@@ -4,6 +4,7 @@
 function loadEvents() {
 	const menuToggleBtn = document.querySelector("#menu");
 	const menu = document.querySelector(".navbar-main-header");
+	const menuLinks = document.querySelector(".navbar-main-header a");
 	
 	let menuActive = false;
 
@@ -16,6 +17,13 @@ function loadEvents() {
 			menuActive = true;
 		}
 	});
+
+	for (let i = 0; i < menuLinks; i++) {
+		menuLinks[i].addEventListener("click", () => {
+			menu.style.display = "none";
+			menuActive = false;
+		});
+	}
 }
 
 loadEvents();
