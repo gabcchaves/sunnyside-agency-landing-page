@@ -49,76 +49,69 @@ h1, h3, strong {
 #menu { display: none; }
 
 /* header */
-header {
-	position: fixed;
-	width: 100%;
-	height: 10%;
-	top: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1% 0;
+#main-header {
+	height: 100vh;
+	background-image: url("images/desktop/image-header.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: grid;
+	grid-template-rows: 15% 15% 1fr;
+	grid-template-columns: 60% 1fr;
 }
 
 .logo-container {
-	padding-left: 3%;
-}
-
-.logo-container img { width: 120% }
-
-.navbar-header {
-	padding-right: 3%;
-	width: 30%;
-	height: 100%;
+	grid-row: 1;
+	grid-column: 1;
+	padding-left: 5%;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
-.navbar-header a {
+.logo-container img { width: 20% }
+
+.navbar-main-header {
+	grid-row: 1;
+	grid-column: 2;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.navbar-main-header a {
 	text-decoration: none;
 	color: var(--white);
 }
 
-.navbar-header a:not(.navbar-header a:last-child):hover {
+.navbar-main-header a:not(a:last-child):hover {
 	text-shadow: 0 0 10px var(--white);
 }
 
-.navbar-header a:last-child {
+.navbar-main-header a:last-child {
 	background-color: var(--white);
 	color: var(--very-dark-desaturated-blue);
-	padding: 4% 8%;
+	padding: 3% 4%;
 	border-radius: 30px;
 }
 
-.navbar-header a:last-child:hover {
+.navbar-main-header a:last-child:hover {
 	background-color: #70D0FA;
 	color: var(--white);
 }
 
-/* about */
-#about {
-	height: 100vh;
-	background-image: url("images/desktop/image-header.jpg");
-	background-size: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-#about h1 {
-	font-size: 3rem;
-	letter-spacing: 0.5vw;
+#main-header h1 {
+	grid-row: 2;
+	grid-column: 1 / 3;
+	text-align: center;
 	color: var(--white);
-	margin-bottom: 5%;
+	font-size: 3rem;
 }
 
-#about div {
-	width: 100%;
-	height: 30%;
+#main-header div:last-child {
+	grid-row: 3;
+	grid-column: 1 / 3;
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
 }
 
-#about div img { height: 70%; }
+#main-header div:last-child img { margin-top: 10%; }
