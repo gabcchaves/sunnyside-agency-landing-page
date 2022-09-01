@@ -292,3 +292,13 @@ h1, h3, strong {
 .client-info small {
 	color: var(--grayish-blue);
 }
+
+/* Projects */
+#projects {
+	display: flex;
+	height: 50vh;
+}
+
+#projects picture img {
+	width: 100%;
+}
