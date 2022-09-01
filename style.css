@@ -484,4 +484,34 @@ h1, h3, strong {
 	.services-categories article p {
 		font-size: 0.75rem;
 	}
+
+	.services-testimonials {
+		display: flex;
+		flex-direction: column;
+		padding: 10% 5%;
+		height: auto;
+	}
+
+	.client-testimonial {
+		margin: 10% 0;
+		padding: 0;
+	}
+
+	.client-testimonial img {
+		width: 30%;
+	}
+
+	.client-testimonial blockquote {
+		font-size: 0.8rem;
+		width: 100%;
+	}
+
+	.client-info strong {
+		font-size: 0.8rem;
+	}
+
+	.client-info small {
+		font-size: 0.6rem;
+		margin: 1% 0;
+	}
 }
