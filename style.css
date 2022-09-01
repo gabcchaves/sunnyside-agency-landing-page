@@ -514,4 +514,20 @@ h1, h3, strong {
 		font-size: 0.6rem;
 		margin: 1% 0;
 	}
+
+	/* Projects */
+	#projects {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* Contact */
+	#contact {
+		padding: 15% 0;
+	}
+
+	.navbar-contact:last-child {
+		margin-top: 10%;
+	}
 }
