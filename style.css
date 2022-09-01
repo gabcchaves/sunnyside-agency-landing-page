@@ -296,9 +296,45 @@ h1, h3, strong {
 /* Projects */
 #projects {
 	display: flex;
-	height: 50vh;
 }
 
 #projects picture img {
 	width: 100%;
+	height: 100%;
 }
+
+/* Contact */
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--dark-moderate-cyan);
+	color: var(--dark-moderate-cyan);
+	filter: brightness(1.7) saturate(0.7);
+	height: 50vh;
+	padding: 5%;
+}
+
+#contact img {
+	filter: invert(1) opacity(0.6);
+}
+
+.navbar-contact {
+	display: flex;
+	justify-content: center;
+	color: var(--dark-desaturated-cyan);
+	width: 100%;
+}
+
+.navbar-contact a {
+	text-decoration: none;
+	margin: 0 2%;
+	color: var(--dark-desaturated-cyan);
+}
+
+.navbar-contact a:hover { color: var(--white) }
+
+.navbar-contact:last-child a { margin: 0 1% }
+
+.navbar-contact:last-child a i { font-size: 1.4rem }
