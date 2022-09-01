@@ -94,3 +94,30 @@ header {
 	background-color: #70D0FA;
 	color: var(--white);
 }
+
+/* about */
+#about {
+	height: 100vh;
+	background-image: url("images/desktop/image-header.jpg");
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#about h1 {
+	font-size: 3rem;
+	letter-spacing: 0.5vw;
+	color: var(--white);
+	margin-bottom: 5%;
+}
+
+#about div {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+}
+
+#about div img { height: 70%; }
