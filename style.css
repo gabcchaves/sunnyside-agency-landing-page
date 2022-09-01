@@ -16,6 +16,10 @@ img {
 	display: block;
 }
 
+p, blockquote {
+	line-height: 1.5;
+}
+
 /* COLORS */
 :root {
 	/* Primary */
@@ -193,3 +197,98 @@ h1, h3, strong {
 .about-article-image { width: 100% }
 
 .about-article-image img { width: 100% }
+
+/* Services */
+#services {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.services-categories {
+	height: 88vh;
+	display: flex;
+}
+
+.services-categories article {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 5% 10%;
+	position: relative;
+	width: 50%;
+	text-align: center;
+	color: var(--dark-desaturated-cyan);
+}
+
+.services-categories article h3 {
+	font-size: 1.6rem;
+}
+
+.services-categories article picture {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.services-categories article picture img {
+	width: 100%;
+	height: 100%;
+}
+
+.services-testimonials {
+	display: grid;
+	grid-template-rows: 20% 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 110vh;
+	background-color: var(--white);
+	padding: 10% 3% 3% 3%;
+}
+
+.services-testimonials h3 {
+	grid-row: 1;
+	grid-column: 1 / 4;
+	text-align: center;
+	color: var(--grayish-blue);
+	font-size: 1.1rem;
+	letter-spacing: 0.5vw;
+}
+
+.client-testimonial {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-bottom: 10%;
+}
+
+.client-testimonial img {
+	border-radius: 50%;
+	width: 20%;
+}
+
+.client-testimonial blockquote {
+	color: var(--very-dark-grayish-blue);
+	text-align: center;
+	margin-top: 15%;
+}
+
+.client-info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 1.5;
+	margin-top: 10%;
+}
+
+.client-info strong {
+	color: var(--very-dark-desaturated-blue);
+}
+
+.client-info small {
+	color: var(--grayish-blue);
+}
