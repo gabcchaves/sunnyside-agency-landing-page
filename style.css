@@ -420,4 +420,38 @@ h1, h3, strong {
 	#main-header div:last-child img {
 		width: 10%;
 	}
+
+	/* About */
+	#about article {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	#about article section, #about article picture {
+		width: 100%;
+	}
+
+	#about article:last-child {
+		flex-direction: column-reverse;
+	}
+
+	.about-article-info {
+		padding: 20% 10%;
+		align-items: center;
+	}
+
+	.about-article-info h3 {
+		font-size: 1.5rem;
+	}
+
+	.about-article-info p {
+		font-size: 0.8rem;
+	}
+
+	.about-article-info a {
+		width: 50%;
+		height: 1.5vh;
+		margin-top: 10%;
+		font-size: 0.9rem;
+	}
 }
